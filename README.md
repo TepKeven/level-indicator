@@ -7,7 +7,7 @@ Level Indicator for flutter offer a flexible progressbar with changes to color
 1. Add the latest version of package to your pubspec.yaml and run (dart pub get):
     yaml
 dependencies:
-    level_indicator: ^0.0.1
+    level_indicator: ^0.0.5
 
 2. Import the package and use it in your flutter application.
     dart
@@ -32,10 +32,7 @@ There are a number of properties you can modify include:
 
 <hr>
 
-<table>
-<tr>
-<td>
-
+<pre>
 class LevelsIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -60,4 +57,14 @@ class LevelsIndicator extends StatelessWidget {
     );
   }
 }
+</pre>
+<img src="https://drive.google.com/uc?export=view&id=1mZIlYhuttODaZqp7NrVnRFcCdEhtiDEc" alt="Level Indicator on Web">
+<img src="https://drive.google.com/uc?export=view&id=1GdbnLF_aMQUf8P0oiwB4_Azpz_-oIN4V" alt="Level Indicator on Web 2">
 
+
+
+
+## Next Goals
+
+- [x] Add more shapes functionality 
+Allowing users to specify different icons and shapes for each bar indicator 
