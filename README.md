@@ -1,14 +1,63 @@
-# level_indicator
+# Level Indicator
 
-A new Flutter package project.
+Level Indicator for flutter offer a flexible progressbar with changes to color
 
-## Getting Started
+## Installation 
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+1. Add the latest version of package to your pubspec.yaml and run (dart pub get):
+    yaml
+dependencies:
+    level_indicator: ^0.0.1
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+2. Import the package and use it in your flutter application.
+    dart
+import 'package:level_indicator/level_indicator.dart';
+
+## Example
+There are a number of properties you can modify include:
+
+- width
+- height
+- top
+- right
+- bottom
+- left
+- borderRadius
+- direction
+- reverse
+- itemCount
+- acitveItem
+- activeColor
+- inactiveColor
+
+<hr>
+
+<table>
+<tr>
+<td>
+
+class LevelsIndicator extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Level Indicator"),
+        titleTextStyle: TextStyle(fontSize: 20),
+        centerTitle: true,
+      ),
+      body: LevelIndicator(
+        width: 100,
+        height: 100,
+        acitveItem: 1,
+        activeColor: Colors.amber,
+        left: 30,
+        direction: Axis.horizontal,
+        inactiveColor: Colors.blue,
+        itemCount: 3,
+        reverse: true,
+        borderRadius: 0,
+      ),
+    );
+  }
+}
+

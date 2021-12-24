@@ -1,7 +1,7 @@
 name: level_indicator
 description: Level Indicator for flutter
 version: 0.0.1
-homepage:
+homepage: https://github.com/TepKeven/level-indicator
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
